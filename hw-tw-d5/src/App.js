@@ -3,7 +3,7 @@ import "./App.css"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import BackOffice from "./components/BackOffice"
 import Home from "./components/Home"
-import NavBar from "./components/Navbar"
+import NavBar from "./components/NavBar"
 import fetchProducts from "./functions/fetchProducts"
 import "bootstrap/dist/css/bootstrap.min.css"
 

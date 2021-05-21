@@ -4,7 +4,7 @@ export default class backOffice extends Component {
 	state = {
 		name: "",
 		brand: "",
-		imgUrl: "",
+		imageUrl: "",
 		price: "",
 		description: "",
 	}
@@ -18,7 +18,7 @@ export default class backOffice extends Component {
 		console.log(this.state)
 	}
 	getImgUrl = (e) => {
-		this.setState({ imgUrl: e.target.value })
+		this.setState({ imageUrl: e.target.value })
 		console.log(this.state)
 	}
 	getPrice = (e) => {
@@ -34,9 +34,9 @@ export default class backOffice extends Component {
 		const postProduct = {
 			name: this.state.name,
 			brand: this.state.brand,
-			imgUrl: this.state.imgUrl,
+			imageUrl: this.state.imageUrl,
 			price: this.state.price,
-			description: this.state.description,
+			description: this.state.description
 		}
 		try {
 			const response = await fetch(
@@ -50,7 +50,7 @@ export default class backOffice extends Component {
 					},
 				}
 			)
-			const post = await response.json()
+			const post = await response
 			console.log("success!" + post)
 		} catch (error) {
 			console.log("You have an error posting:", error)
@@ -110,6 +110,15 @@ export default class backOffice extends Component {
 									<small className="form-text ">
 										<em> Price in dollars</em>
 									</small>
+								</div>
+								<div className="form-group">
+									<label htmlFor="Photo">Photo</label>
+									<input
+										type="file"
+										className="form-control"
+										id="file"
+										// onChange={this.getFile}
+									/>
 								</div>
 								<div className="form-group">
 									<label htmlFor="description">Description</label>
