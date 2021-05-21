@@ -7,11 +7,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col className="col-3">
-            <CardComponent />
-          </Col>
-        </Row>
+        <CardComponent />
       </div>
     );
   }

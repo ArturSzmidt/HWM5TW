@@ -3,9 +3,10 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import BackOffice from './components/BackOffice';
 import Home from './components/Home';
-import NavBar from './components/NavBar';
+import NavBar from './components/navbar';
 import fetchProducts from './functions/fetchProducts';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../src/css/index.css';
 
 class App extends React.Component {
   state = {
