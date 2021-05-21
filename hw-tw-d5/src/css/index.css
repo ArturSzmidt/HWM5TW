@@ -1,0 +1,10 @@
+.navbar {
+  background-color: #ffffff !important;
+}
+.nav-link {
+  color: #e47911 !important;
+}
+.card {
+  border-radius: 20px;
+  box-shadow: 3px 2px 10px #eeecea;
+}

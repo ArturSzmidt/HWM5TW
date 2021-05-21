@@ -8,24 +8,24 @@ import fetchProducts from "./functions/fetchProducts"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 class App extends React.Component {
-	state = {
-		user: {},
-	}
+  state = {
+    user: {},
+  };
 
-	componentDidMount = async () => {
-		const getProducts = await fetchProducts()
-    console.log("wow", getProducts)
-	}
-  
-	render() {
-		return (
-			<Router basename="/">
-				<NavBar />
-				<Route path="/" exact component={Home} />
-				<Route path="/backoffice" exact component={BackOffice} />
-			</Router>
-		)
-	}
+  componentDidMount = async () => {
+    const getProducts = await fetchProducts();
+    console.log('wow', getProducts);
+  };
+
+  render() {
+    return (
+      <Router basename="/">
+        <NavBar />
+        <Route path="/" exact component={Home} />
+        <Route path="/backoffice" exact component={BackOffice} />
+      </Router>
+    );
+  }
 }
 
-export default App
+export default App;
