@@ -1,17 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< Updated upstream
-// import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-import fetchProducts from '../functions/fetchProducts';
-fetchProducts();
-class CardComponent extends Component {
-  render() {
-    return (
-      <div>
-        {fetchProducts().map((item) => {
-          return <p>{item.name}</p>;
-        })}
-      </div>
-=======
 import {
   Card,
   ListGroup,
@@ -63,7 +50,6 @@ class CardComponent extends Component {
           ))}
         </Row>
       </Container>
->>>>>>> Stashed changes
     );
   }
 }
