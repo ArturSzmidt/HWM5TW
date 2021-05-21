@@ -42,8 +42,8 @@ export default class backOffice extends Component {
 			const response = await fetch(
 				"https://striveschool-api.herokuapp.com/api/product/",
 				{
-					method: "PUT",
-					body: JSON.parse(postProduct),
+					method: "POST",
+					body: JSON.stringify(postProduct),
 					headers: {
 						Authorization:
 							"Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgwMDlkOWIxZjBmYjAwMTVkOTE2ZmYiLCJpYXQiOjE2MjE1OTMxMjMsImV4cCI6MTYyMjgwMjcyM30.KH0U-5IdgCx5VNSAT2DjhGbThKvpTr_YrirAEcJEK-s",

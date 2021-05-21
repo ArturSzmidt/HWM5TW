@@ -11,5 +11,6 @@ export default async function fetchProducts() {
 		}
 	)
 	const products = await response.json()
-    return products
+    products.forEach(product => {allProducts.push(product)})
+	return products
 }
