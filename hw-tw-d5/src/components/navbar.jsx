@@ -9,7 +9,7 @@ import {
   Button,
 } from 'react-bootstrap';
 
-export default class navbar extends Component {
+export default class NavBar extends Component {
   render() {
     return (
       <div>
